@@ -38,3 +38,8 @@ public:
         }
     }
 };
+//optimized
+//123 4567 -> 4567123
+reverse(arr, arr+d);// 321 4567
+reverse(arr+d, arr+n);// 321 7654
+reverse(arr, arr+n);//4567123
