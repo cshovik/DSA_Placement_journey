@@ -13,7 +13,7 @@ vector<int> rotateArray(vector<int>& arr, int n) {
 
 }
 //// to left rotate in k th position
-//vector array don't have return value
+//void function don't have return value
 class Solution {
 public:
     void rotateLeft(vector<int>& nums, int k) {
