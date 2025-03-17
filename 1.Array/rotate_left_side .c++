@@ -40,6 +40,24 @@ public:
 };
 //optimized
 //123 4567 -> 4567123
-reverse(arr, arr+d);// 321 4567
-reverse(arr+d, arr+n);// 321 7654
-reverse(arr, arr+n);//4567123
+class Solution {
+public:
+    void rotate(std::vector<int>& nums, int k) {
+        int n = nums.size();
+        
+        // If k is greater than the size, take the modulus
+        k = k % n;
+
+        // Reverse the first k elements
+        std::reverse(nums.begin(), nums.begin() + k);// 321 4567
+        
+        // Reverse the remaining n-k elements
+        std::reverse(nums.begin() + k, nums.end());// 321 7654
+        // Reverse the entire array
+        std::reverse(nums.begin(), nums.end());//4567123
+    }
+};
+//without vector for d instad of k
+reverse(arr, arr+d);
+reverse(arr+d, arr+n);
+reverse(arr, arr+n);
