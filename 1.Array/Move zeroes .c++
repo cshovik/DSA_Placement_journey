@@ -1,6 +1,6 @@
 // 12034509 -> 12345900
 //EXplaination: Use two pointer approach
-//120304507--> first j at pos 2, i start from nums[3], check i non zero if non zero swap with j ->123004507-> then j++ means at pos 3, and i start from nums[4]
+//120304507--> first j at pos 2, i start from nums[3], check i non zero if non zero swap with j ->12304507-> then j++ means at pos 3, and i start from nums[4]
 //t.C: n (rotate 1 time) space complexity: o(1)
 //optimized method
 class Solution {
