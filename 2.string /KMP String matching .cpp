@@ -11,6 +11,8 @@
 // second: c, first =c , both same , inc both like this 
 //retuern total number of first covered - total number of second coverd, ex haystack : sadfgert, needle : sad, when second=needle.size(), it is 3, and also fisrt coverd upto 3 so 3-3=0 ans
 // means at 0 index sad start 
+//time complexity : o(m+n)-> one for m traverse and other for n traverse
+//space complexity for needle : 0(m)
 class Solution {
 public:
 
