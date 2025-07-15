@@ -12,9 +12,10 @@ int pow(int num, int n)
 
 int main() {
     // Write C++ code here
-    int n;
-    cin >>n;
-    cout<< fact(n);
+    int num, n;
+    cin >>num;
+    cin>> n;
+    cout<< pow(num, n);
 
     return 0;
 }
